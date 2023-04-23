@@ -1,0 +1,15 @@
+.main {
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.code-text-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

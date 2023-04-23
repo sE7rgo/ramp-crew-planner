@@ -7,14 +7,6 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Main</Link>
-            </li>
-            <li></li>
-          </ul>
-        </nav>
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
