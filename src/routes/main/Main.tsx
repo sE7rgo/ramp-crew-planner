@@ -1,9 +1,16 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import "./Main.css";
 import { Button, TextField, Typography } from "@mui/material";
 
 function Main() {
+  const navigate = useNavigate();
   const [planId, setPlanId] = useState<string | null>(null);
   const [inputErrorMessage, setInputErrorMessage] = useState<string | null>(
     null
@@ -36,6 +43,10 @@ function Main() {
   ) => {
     const value = event?.target?.value;
     checkValidId(value) ? setInputErrorMessage(null) : setPlanId(null);
+  };
+
+  const handleProceedButtonClick = () => {
+    planId && navigate(planId);
   };
 
   // useEffect(() => {
@@ -75,6 +86,8 @@ function Main() {
               fullWidth
               variant="text"
               color="success"
+              disabled={!planId}
+              onClick={handleProceedButtonClick}
             >
               proceed to {planId}
             </Button>
