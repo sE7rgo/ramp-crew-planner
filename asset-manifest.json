@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ramp-crew-planner/static/css/main.5b48f960.css",
+    "main.js": "/ramp-crew-planner/static/js/main.8110f388.js",
+    "index.html": "/ramp-crew-planner/index.html",
+    "main.5b48f960.css.map": "/ramp-crew-planner/static/css/main.5b48f960.css.map",
+    "main.8110f388.js.map": "/ramp-crew-planner/static/js/main.8110f388.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b48f960.css",
+    "static/js/main.8110f388.js"
+  ]
+}
